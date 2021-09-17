@@ -38,6 +38,8 @@
 
 - 10 .	Spring Cloud : nous fournit registration, configuration et Proxy service.
 
+- 11 . Circuit breakers:
+
 - 11 .	OpenFeign : Faire communiquer les micro-services distants en mode synchrone, et basé sur Ribbon pour faire l’équilibrage de charge.
 
 - 12 .	Swagger : faire documenter les services web.
