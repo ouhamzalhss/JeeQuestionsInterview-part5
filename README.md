@@ -1,6 +1,6 @@
 ## <samp>Les Questions pour un entretien profile JAVA/JEE!</samp>
 
-#### Partie 6: Programmation Réactive en Java
+#### Partie 6: Micro-services
 
 - 1 .	Deux architectures :
   *  Architecture basé sur une application monolithique 
