@@ -45,6 +45,8 @@
 
 - 11 . hestrix:
 
+- 12 . Zipkin: 
+
 - 12 .	OpenFeign : Faire communiquer les micro-services distants en mode synchrone, et basé sur Ribbon pour faire l’équilibrage de charge.
 
 - 13 .	Base de données NoSql : Quand la quantité de données est très importante, exemple MongoDb
