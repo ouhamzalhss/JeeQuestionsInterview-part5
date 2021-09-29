@@ -21,7 +21,7 @@
   *  Redéploiement à chaud
   *  Technologies différents
   *  Equipes indépendantes
-  * 	Facile à appliquer agilité et TDD
+  *  Facile à appliquer agilité et TDD
 
 - 6 .	Désavantages d’une application basée sur micro-services
   *  la communication entre les méthodes est plus lente, 
@@ -37,6 +37,7 @@
   *  Nom de micro-service
   *  Adresse IP
   *  Port
+  
   Pour l'implementer:
   *  ajouter la dépendance (spring-cloud-starter-netflix-eureka-server)
   *  ajouter cette annotation dans la classe main. @EnableEurekaServer	// Enable eureka server
