@@ -33,7 +33,7 @@
   *  Besion de scaler l'application.
   *  Des grandes équipes.
 
-- 8 .	Eureka Server ou service registry : Est un microservice qui enregistre la localisation des micro-services créer par Netflix :
+- 8 .	Eureka Server ou service registry : Est un microservice technique qui enregistre la localisation des micro-services créer par Netflix :
   *  Nom de micro-service
   *  Adresse IP
   *  Port
@@ -45,9 +45,9 @@
 - 9 .	Configuration service : Est un microservice qui centralise la configuration de tous les micro-services.
 
 - 10 .	Proxy service : Dispatcher toutes les requêtes des clients vers les instances, donc il fait équilibrage de charge (load balancer)
-  *  ZUUL : Model multi threads avec IO bloquantes. (spring-cloud-starter-netflix-zuul). Il agit comme un client eureka @EnableEurekaClient 		
-et @EnableZuulProxy		pour activer ZUUL.
-  *  Spring cloud Gateway : Model single threads avec IO Non bloquantes
+  *  ZUUL : Est un proxy qui utilise un model multi threads avec IO bloquantes, Il agit comme un client eureka @EnableEurekaClient 		
+et @EnableZuulProxy		pour activer ZUUL. (spring-cloud-starter-netflix-zuul)
+  *  Spring cloud Gateway : Est un proxy qui utilise un Model single threads avec IO Non bloquantes
 
 - 11 .	Spring Cloud : Projet Spring pour créer des applications microservices, fournit registration, configuration et Proxy service.
 
@@ -66,8 +66,8 @@ et @EnableZuulProxy		pour activer ZUUL.
 
 - 18 . quelle est la signification de OAuth ?  un protocole d'autorisation permet à vos clients de créer un compte sur votre application web en se connectant sur un compte appartenant à une société vérifiée, comme Google, Facebook, Twitter, Okta ou GitHub...
 
-- 19 .	Base de données NoSql : Quand la quantité de données est très importante, exemple MongoDb
-
-- 20 .	Swagger : faire documenter les services web.
+- 20 .	Swagger : un projet open source qui offre des outils permettant de générer la documentation pour les API Web. Il offre également une interface permettant d’explorer et tester les différentes méthodes offertes par ces services.
 
 - 21 .	MapStruct : Pour faire le mapping objet / objet ( DTO)
+
+- 19 .	Base de données NoSql : Quand la quantité de données est très importante, exemple MongoDb
