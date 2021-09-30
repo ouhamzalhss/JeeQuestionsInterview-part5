@@ -19,13 +19,13 @@
 - 5 .	Avantages d’une application basée sur micro-services
   *  Performances
   *  Redéploiement à chaud
-  *  Technologies différents
+  *  Technologies différentes
   *  Equipes indépendantes
   *  Facile à appliquer agilité et TDD
 
 - 6 .	Désavantages d’une application basée sur micro-services
   *  la communication entre les méthodes est plus lente, 
-  *  plus difficiles à déboguer, et doivent être sécurisés.
+  *  plus difficiles à déboguer.
   *  il y aura un effort supplémentaire pour les opérations, le déploiement, scaling, configuration, monitoring et les tests car chaque service est séparé.
 
 - 7 . Les cas d'utilsation de l'architecture microservices: 
@@ -33,7 +33,9 @@
   *  Besion de scaler l'application.
   *  Des grandes équipes.
 
-- 8 .	Eureka Server ou service registry : Est un microservice technique qui enregistre la localisation des micro-services créer par Netflix :
+- 8 .	Spring Cloud: Projet Spring pour créer des applications microservices, fournit registration, configuration et Proxy service.
+
+- 9 .	Eureka Server ou service registry : Est un microservice technique qui enregistre la localisation des micro-services créer par Netflix :
   *  Nom de micro-service
   *  Adresse IP
   *  Port
@@ -42,16 +44,13 @@
   *  ajouter la dépendance (spring-cloud-starter-netflix-eureka-server)
   *  ajouter cette annotation dans la classe main. @EnableEurekaServer	// Enable eureka server
 
-- 9 .	Configuration service : Est un microservice qui centralise la configuration de tous les micro-services.
+- 10 .	Configuration service : Est un microservice qui centralise la configuration de tous les micro-services.
 
-- 10 .	Proxy service : Dispatcher toutes les requêtes des clients vers les instances, donc il fait équilibrage de charge (load balancer)
-  *  ZUUL : Est un proxy qui utilise un model multi threads avec IO bloquantes, Il agit comme un client eureka @EnableEurekaClient 		
-et @EnableZuulProxy		pour activer ZUUL. (spring-cloud-starter-netflix-zuul)
+- 11 .	Proxy service : Dispatcher toutes les requêtes des clients vers les instances, donc il fait équilibrage de charge (load balancer)
+  *  ZUUL : Est un proxy qui utilise un model multi threads avec IO bloquantes, [  @EnableZuulProxy		pour l'activer. sa dépendance (spring-cloud-starter-netflix-zuul)]
   *  Spring cloud Gateway : Est un proxy qui utilise un Model single threads avec IO Non bloquantes
 
-- 11 .	Spring Cloud : Projet Spring pour créer des applications microservices, fournit registration, configuration et Proxy service.
-
-- 12 . Circuit breakers: permet d'éviter une défaillance sur le système. créer un système tolérant aux pannes et qui peut survivre sans problème lorsque les autres services sont indisponibles ou ont une latence élevée. Par exemple, si le service de catalogue de produits n'est pas disponible, alors l'UI peut récupérer la liste de produits dans le cache.
+- 12 . Circuit breakers: Est un design pattern qui permet d'éviter une défaillance sur le système. 
 
 - 13 . Hystrix: C'est une implementation de Circuit breaker fournit par Netflix, qui donne un contrôle sur la latence et l'échec entre les services distribués. (spring-cloud-starter-hystrix)
 
@@ -66,8 +65,8 @@ et @EnableZuulProxy		pour activer ZUUL. (spring-cloud-starter-netflix-zuul)
 
 - 18 . quelle est la signification de OAuth ?  un protocole d'autorisation permet à vos clients de créer un compte sur votre application web en se connectant sur un compte appartenant à une société vérifiée, comme Google, Facebook, Twitter, Okta ou GitHub...
 
-- 20 .	Swagger : un projet open source qui offre des outils permettant de générer la documentation pour les API Web. Il offre également une interface permettant d’explorer et tester les différentes méthodes offertes par ces services.
+- 19 .	C'est quoi Swagger ? un projet open source qui offre des outils permettant de générer la documentation pour les API Web. il respecte le standard OpenAPI, Il offre également une interface permettant d’explorer et tester les différentes méthodes offertes par ces services.
 
-- 21 .	MapStruct : Pour faire le mapping objet / objet ( DTO)
+- 20 .	C'est quoi MapStruct ? Pour faire le mapping objet / objet ( DTO)
 
-- 19 .	Base de données NoSql : Quand la quantité de données est très importante, exemple MongoDb
+- 21 .	Quand est-we que on est besion de Base de données NoSql ? Quand la quantité de données est très importante, exemple MongoDb
